@@ -1,0 +1,38 @@
+{{!< default}}
+    <section class="pt-16 pb-44 overflow-hidden">
+        <div class="container mx-auto px-4">
+            <div class="md:max-w-xl text-center mx-auto">
+                <h2 class="mb-5 font-heading font-bold text-6xl sm:text-8xl xl:text-10xl text-gray-900">{{statusCode}}
+                </h2>
+                <p class="mb-10 text-gray-600 text-lg">{{message}}</p>
+                
+                    <button
+                        class="inline-block w-full px-8 py-3 mb-3 font-semibold leading-loose text-white transition duration-200 rounded-full shadow-2xl lg:mb-0 lg:w-auto bg-secondary hover:bg-primary">
+                        <div
+                            class="absolute top-0 left-0 transform -translate-x-full group-hover:-translate-x-0 h-full w-full transition ease-in-out duration-500 bg-gradient-cyan">
+                        </div>
+                        <a href="{{@site.url}}" class="relative z-10">Strona główna</a>
+                    </button>
+                
+            </div>
+        </div>
+  
+    {{#if errorDetails}}
+
+    <section>
+        <h4>Theme errors:</h4>
+        <ul>
+            {{#foreach errorDetails}}
+            <li>
+                <h5>{{{rule}}}</h5>
+
+                {{#foreach failures}}
+                <span><strong>Ref:</strong> {{ref}}</span><br>
+                <span><strong>Message:</strong> {{message}}</span>
+                {{/foreach}}
+            </li>
+            {{/foreach}}
+        </ul>
+    </section>
+    {{/if}}
+    </section>

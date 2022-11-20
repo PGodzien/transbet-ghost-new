@@ -1,0 +1,106 @@
+<html lang="{{@site.locale}}">
+
+<head id="top">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{{asset "built/main.css"}}" />
+  <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js" async></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/fkc8rqy.css">
+
+  <title>{{meta_title}}</title>
+  <style class="">
+    .orange {
+      color: #ff7143;
+    }
+    .bg-gradient-green {
+      background-image: linear-gradient(98.24deg,#cee9c1 0,#83c8de 100%);
+    }
+    .bg-gradient-cyan {
+background-image: linear-gradient(90deg,#6cd5f6 0,#f89d5c 50%,#5b6af0 100%);
+    }
+
+    .gold {
+      color: #b68c5a;
+    }
+        .hide {
+      display: none;
+    }
+  </style>
+  {{ghost_head}}
+</head>
+
+<body class="relative text-gray-700">
+  {{navigation}}
+  <div class="relative z-0">
+    <main>
+        <div id="cookie_cs_v01" class="fixed z-50 w-full p-5 text-sm text-center bg-white border shadow-2xl md:bottom-5 bottom-2 md:left-5 md:w-1/4 rounded-xl md:p-8 hover:border-secondary"><p class="text-center">Nasza strona wykorzystuje pliki cookies. Brak zmiany ustawień przeglądarki oznacza zgodę na ich użycie. 
+<a href="/polityka-prywatnosci/" id="cookie_cs_v01_polityka" class="font-bold underline underline-offset-4">Polityka Prywatności</a> <br><br><a href="javascript:cookie_cs_v01_create_cookie('cookie_cs_v01',1,7);" class="px-3 py-2 mt-6 text-xs text-white transition duration-200 bg-black hover:bg-secondary rounded-xl">rozumiem</a></p></div>
+      {{{body}}}
+    </main>
+    <a href="#top" class="">
+      <img id="myBtn" class="fixed z-40 w-12 h-12 hide right-4 bottom-4" src="/assets/public/back_to_top.svg" alt="">
+    </a>
+    {{> "footer"}}
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+  <script src="{{asset " built/main.js"}}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("a").on('click', function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+            window.location.hash = hash;
+          });
+        }
+      });
+    });
+  </script>
+  <script async>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+          $('#myBtn').removeClass('hide');
+        } else {
+          $('#myBtn').addClass('hide');
+        }
+      });
+    });
+  </script>
+    <!-- AlpineJS Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
+      });
+    </script>
+  <script async>
+    function cookie_cs_v01_create_cookie(name, value, days) { if (days) { var date = new Date(); date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); var expires = "; expires=" + date.toGMTString(); } else var expires = ""; document.cookie = name + "=" + value + expires + "; path=/"; document.getElementById("cookie_cs_v01").style.display = "none"; } function cookie_cs_v01_read_cookie(name) { var nameEQ = name + "="; var ca = document.cookie.split(";"); for (var i = 0; i < ca.length; i++) { var c = ca[i]; while (c.charAt(0) == " ") c = c.substring(1, c.length); if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length); } return null; } var cookie_cs_v01_jest = cookie_cs_v01_read_cookie("cookie_cs_v01"); if (cookie_cs_v01_jest == 1) { document.getElementById("cookie_cs_v01").style.display = "none"; }
+  </script>
+  {{ghost_foot}}
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+{{!< default}}
+<h1 class="mx-auto text-6xl font-bold my-44">TYTUŁ</h1>
+<div>
+{{#tag}}
+
+{{!-- <div class="relative">
+    <img class="absolute inset-0 object-cover object-center w-full h-full" src="{{feature_image}}" alt="">
+    <div aria-hidden="true" class="absolute inset-0 w-full h-full bg-gradient-to-r from-black via-black to-transparent opacity-80"></div>
+    <div class="container relative px-6 m-auto md:px-12 lg:px-6">
+        <div class="py-40 space-y-16 md:py-56 lg:w-8/12 lg:mx-auto">
+            <h1 class="text-3xl font-bold text-white sm:text-4xl md:text-5xl">
+                {{name}}
+            </h1>
+           <p class="text-lg text-white md:text-xl"></p>
+            <div class="flex items-center space-x-5 text-white">
+            <p class="">Dla kogo:  <span class="ml-2 text-xl font-bold transition duration-200 hover:text-white text-secondary">{{tags from="1" to="1"}}</span></p>
+            <p class="">|</p>
+            <p class="">Rodzaj działań: <span class="ml-2 text-xl font-bold transition duration-200 hover:text-white text-secondary">{{tags from="2" to="2"}}</span></p>
+            </div>
+        </div>
+    </div>
+</div> --}}
+
+<div class="py-16 bg-gray-50">  
+    <div class="container px-6 m-auto text-gray-600 max-w-7xl md:px-12 xl:px-6">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold text-gray-900 md:text-4xl">{{name}}</h2>
+          <p class="text-lg">{{#if description}}
+                {{description}}
+            {{else}}
+                Zapraszamy do zapoznania się z {{plural ../pagination.total empty='materiałem' singular='% materiałem' plural='% materiałami'}}
+            {{/if}}</p>
+        </div>
+    </div>
+</div>
+                                
+ 
+                            
+{{/tag}}
+
+
+<div class="py-16">  
+    <div class="container px-6 m-auto text-gray-600 max-w-7xl md:px-12 xl:px-6">
+
+        <div class="grid gap-12 md:grid-cols-2">
+    {{#foreach posts visibility="all"}}
+
+        {{> "card"}} {{!-- partials/card.hbs --}}
+
+    {{/foreach}}
+
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+          

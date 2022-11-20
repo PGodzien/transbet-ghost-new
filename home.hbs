@@ -1,0 +1,355 @@
+{{!< default}} <style>
+    .hidden-xs {
+    display: none;
+    }
+
+    /* dummy criterion for demo purposes */
+
+    @media screen and (min-width: 300px) {
+    .hidden-xs {
+    display: block;
+    }
+    }
+    </style>
+<!-- Hero -->
+<section>
+    <div class="relative w-full overflow-hidden">
+      <!-- <div class="absolute top-0 right-0 hidden w-full -mt-20 transform rotate-45 translate-x-1/2 bg-white sm:block h-96 z-10 opacity-30"></div>
+      <div class="absolute top-0 left-0 hidden w-full  transform mt-20 rotate-45 -translate-x-1/3 bg-yellow-500 sm:block h-96 z-10 opacity-30"></div> -->
+      <div class="relative flex items-center justify-end py-12 overflow-hidden bg-black md:py-0">
+          <div class="absolute inset-0 z-10 opacity-50 bg-gradient-to-r from-black via-black to-transparent"></div>
+          
+          <video autoplay loop muted preload = "none" class="absolute z-0 hidden object-cover object-center w-full mx-auto bg-black bg-center bg-gradient-to-l from-black via-black to-transparent md:block hidden-xs">
+              <source class="hidden md:block" src="http://adverthink.kylos.pl/transbet.mp4" type="video/mp4" />
+              Twoja przeglądarka nie obsluguje wideo.
+          </video>
+
+          <div class="container relative z-20 px-6 m-auto mx-auto max-w-7xl md:px-12 lg:px-7">
+              <div class="flex flex-wrap items-center px-2 md:px-0">
+                  <div class="relative text-white md:py-12 lg:w-5/12 lg:py-24 xl:py-40">
+                    <div class="relative z-20 py-12 px-16">
+                      <!-- <div class="absolute -top-5 z-10 left-5 h-full w-full shadow-2xl md:backdrop-blur-sm md:bg-black md:bg-opacity-20"></div> -->
+                      <h2 class="max-w-2xl shadow-2xl relative z-20 text-4xl font-extrabold lg:text-6xl uppercase">
+                          <span>Transbet</span>
+                          <span class="text-secondary">betoniarnie</span>
+                      </h2>
+                      <p class="max-w-2xl relative z-20 shadow-2xl my-6 text-gray-300">
+                        produkcja betonu towarowego dla odbiorców indywidualnych i instytucjonalnych</p>
+                      <br></p>
+                      <a class="inline-block relative shadow-2xl z-20 px-8 py-3 mb-3 leading-loose text-white transition duration-200 bg-yellow-500 shadow-2xl lg:mb-0 lg:mr-3 lg:w-auto bg-secondary hover:bg-black"
+                          href="#_">Zamów beton</a>
+                          <a href="#more" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative shadow-2xl inline-block ml-5 relative z-20 text-base text-white transition duration-150 ease hover:text-yellow-500">
+                            <span class="block">Zobacz więcej</span>
+                            <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                                <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t-2 border-white"></span>
+                            </span>
+                            <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                                <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t-2 border-yellow-500" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                            </span>
+                        </a>
+                      </div>
+                  </div>
+                  <div class="relative h-full min-w-xl w-xl lg:w-7/12">
+
+                    <!-- <div class="absolute inset-0 flex items-center justify-center">
+                      <div class="flex items-center justify-center w-24 h-24 rounded-full bg-gray-50">
+                      <svg class="w-20 h-20" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z"/></svg>
+                    </div>
+                    </div>
+                    <div class="flex flex-wrap items-end mb-4">
+                      <div class="w-full px-3 mb-4 lg:mb-0 lg:w-2/3">
+                        <img class="object-cover w-full h-32 lg:h-48" src="https://scontent-frx5-1.xx.fbcdn.net/v/t39.30808-6/292588059_1192391251305770_8239336257814362855_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=cC7BdEZFQwsAX-NZL39&tn=OPLYrdhnwQfrIwIs&_nc_ht=scontent-frx5-1.xx&oh=00_AT-Bh5GgO99PbAUjck1HE3Q_l-cKnFStjTXdFKcjtya0kQ&oe=6302947B" alt="">
+                      </div>
+                      <div class="w-full px-3 lg:w-1/3">
+                        <img class="object-cover w-full h-32 " src="https://scontent-frt3-2.xx.fbcdn.net/v/t39.30808-6/276142776_1125293934682169_5213464728406489447_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=_V8JJ9hCoY0AX9EMGBp&_nc_ht=scontent-frt3-2.xx&oh=00_AT9TSej6-LWo3W3s4MKgE7Ps_spWGEmTjp5DfDxhj7mYrg&oe=63032B6F" alt="">
+                      </div>
+                    </div>
+                    <div class="flex flex-wrap items-start">
+                      <div class="w-full px-3 mb-4 lg:mb-0 lg:w-1/3">
+                        <img class="object-cover w-full h-32 " src="https://scontent-frt3-2.xx.fbcdn.net/v/t39.30808-6/292702107_1192391331305762_4525118039119220484_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_ohc=hVhUbJCc_MUAX-L8h6g&tn=OPLYrdhnwQfrIwIs&_nc_ht=scontent-frt3-2.xx&oh=00_AT9etYs10jnJ99kDhLyTPfUI8zjY6_12IFY0O9rPr_46Ww&oe=6302FD57" alt="">
+                      </div>
+                      <div class="w-full px-3 lg:w-2/3">
+                        <img class="object-cover w-full h-32 lg:h-48" src="https://scontent-frt3-1.xx.fbcdn.net/v/t39.30808-6/292452633_1192391574639071_5778801215118129136_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=8H-SAlDjBpQAX98sV09&_nc_ht=scontent-frt3-1.xx&oh=00_AT9Yd7DnIOI6H-FT0Zx3XUvHRPmAJIRJBCNwt8HqdSTLLA&oe=63040139" alt="">
+                      </div>
+                    </div> -->
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+      <div class="absolute bottom-0 hidden w-full text-white bg-black lg:block bg-opacity-60">
+        <div class="relative z-20 flex items-center justify-around h-16 mx-auto max-w-7xl">
+        <div class="relative z-20 flex items-center justify-center w-full h-full font-light ">Lokalizacje naszych betoniarnii:</div>
+        <a class="relative z-20 flex items-center justify-center w-full h-full text-lg transition duration-200 bg-transparent hover:bg-yellow-500 hover:bg-opacity-60 border-0.5 border-gray-800 border-r" href="#_">Przemyśl</a>
+        <a class="relative z-20 flex items-center justify-center w-full h-full text-lg transition duration-200 bg-transparent hover:bg-yellow-500 hover:bg-opacity-60 border-0.5 border-gray-800 border-r" href="#_">Jarosław</a>
+        <a class="relative z-20 flex items-center justify-center w-full h-full text-lg transition duration-200 bg-transparent hover:bg-yellow-500 hover:bg-opacity-60 border-0.5 border-gray-800 border-r" href="#_">Radymno</a>     
+      </div>
+      </div>
+  </div>
+  </div>
+</section>
+<!-- LOGOS -->
+<section id="more" class="relative z-30 tails-selected-element " data-primary="yellow-500">
+  <div class="flex flex-col items-center px-5 pt-16 pb-16 mx-auto sm:flex-row max-w-7xl sm:px-6 lg:px-14">
+      <div class="w-full max-w-sm mx-auto space-y-2 sm:mx-0 sm:max-w-none sm:w-1/2 pr-14 lg:pr-10 xl:pr-32">
+          <div class="flex items-center">
+              <svg class="w-6 h-6 text-yellow-500 fill-current" data-primary="yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-6 h-6 text-yellow-500 fill-current" data-primary="yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-6 h-6 text-yellow-500 fill-current" data-primary="yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-6 h-6 text-yellow-500 fill-current" data-primary="yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <svg class="w-6 h-6 text-yellow-500 fill-current" data-primary="yellow-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+              <div class="flex-grow-0 w-full h-0 my-4 ml-2 bg-green-200 border-b border-gray-200" data-primary="yellow-500"></div>
+          </div>
+
+          <h3 class="text-2xl font-bold text-gray-900 sm:text-xl lg:text-2xl">Zaufali nam liderzy branży budowalanej</h3>
+          <p class="text-sm text-gray-500">Dzięki wysokiej jakości usług i produktów zdobyliśmy zaufanie największych firm budowlanych oraz dziesiątki zadowolonych klientów indywidualnych. Dziękujemy za Państwa zaufanie. 
+      </p></div>
+      <div class="grid w-full grid-cols-2 mt-20 sm:mt-0 sm:w-1/2 gap-y-8 sm:gap-y-1 gap-x-8 md:grid-cols-3">
+          <div class="relative z-10 flex items-center justify-center col-span-1">
+              <img src="https://ml4d5ydfysph.i.optimole.com/gbblCDQ-Ik0n8F3l/w:243/h:136/q:mauto/dpr:2.0/https://transbet.com.pl/wp-content/uploads/2019/02/budimex-logo.jpg" alt="">
+          </div>
+          <div class="flex items-center justify-center col-span-1">
+              <img src="https://ml4d5ydfysph.i.optimole.com/gbblCDQ-4sRnlCKt/w:560/h:315/q:mauto/https://transbet.com.pl/wp-content/uploads/2019/02/polaqua-logo.jpg" alt="">
+          </div>
+          <div class="flex items-center justify-center col-span-1">
+              <img src="https://ml4d5ydfysph.i.optimole.com/gbblCDQ-2OUqSaYE/w:243/h:136/q:mauto/dpr:2.0/https://transbet.com.pl/wp-content/uploads/2019/02/erbud-logo.jpg" alt="">
+          </div>
+          <div class="flex items-center justify-center col-span-1">
+              <img src="https://ml4d5ydfysph.i.optimole.com/gbblCDQ-MmS2lulw/w:243/h:136/q:mauto/dpr:2.0/https://transbet.com.pl/wp-content/uploads/2019/02/skanska-logo.jpg" alt="">
+          </div>
+          <div class="flex items-center justify-center col-span-1">
+              <img src="https://ml4d5ydfysph.i.optimole.com/gbblCDQ-FQrtEmHq/w:243/h:136/q:mauto/dpr:2.0/https://transbet.com.pl/wp-content/uploads/2019/02/inzynieria-logo.jpg" alt="">
+          </div>
+          <div class="flex items-center justify-center col-span-1">
+              <img src="https://ml4d5ydfysph.i.optimole.com/gbblCDQ-5t_RFblw/w:243/h:136/q:mauto/dpr:2.0/https://transbet.com.pl/wp-content/uploads/2019/03/besta-logo.jpg" alt="">
+          </div>
+      </div>
+  </div>
+</section>
+  <!-- FEATURES -->
+  <section class="relative pt-16 pb-16 overflow-hidden bg-gray-50">
+    <div class="container px-4 mx-auto mb-12">
+      <h2 class="mb-24 text-3xl font-semibold text-center text-gray-900 font-heading">Oferta naszej betoniarnii</h2>
+      <div class="flex flex-wrap mx-auto -m-8 max-w-7xl">
+        <div class="w-full p-8 transition duration-200 bg-transparent border-b border-gray-200 md:w-1/3 hover:bg-yellow-500 md:border-r">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-12 h-auto" src="http://adverthink.kylos.pl/transbet/img/concrete-mixer-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Beton</h3>
+                <p class="mb-5 text-base text-gray-600">Tworzymy mieszanki betonowe według indywidualnych potrzeb Klienta lub inwestycji.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent border-b border-r border-gray-200 md:w-1/3 hover:bg-yellow-500">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-12 h-auto" src="http://adverthink.kylos.pl/transbet/img/brick-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Produkty betonowe</h3>
+                <p class="mb-5 text-base text-gray-600">Prowadzimy produkcję oraz sprzedaż wyrobów betonowych.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent border-b border-gray-200 md:w-1/3 hover:bg-yellow-500">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-8 h-auto" src="http://adverthink.kylos.pl/transbet/img/laboratory-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Laboratorium betonowe</h3>
+                <p class="mb-5 text-base text-gray-600">Posiadamy przyzakładowe laboratorium badawcze betonu i jego składników.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent border-r border-gray-200 md:w-1/3 hover:bg-yellow-500">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-12 h-auto" src="http://adverthink.kylos.pl/transbet/img/excavator-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Sprzęt i wynajem</h3>
+                <p class="mb-5 text-base text-gray-600">Nasza wytwórnia posiada duże oraz młode zaplecze sprzętowe.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent border-r border-gray-200 md:w-1/3 hover:bg-yellow-500">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-10 h-auto" src="http://adverthink.kylos.pl/transbet/img/welder-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Wyroby hutnicze</h3>
+                <p class="mb-5 text-base text-gray-600">Prowadzimy handel wyrobami hutniczymi. Dostarczamy stal pod wskazane miejsce autem z przyczepą (dłużycą).</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent md:w-1/3 hover:bg-yellow-500">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-10 h-auto" src="http://adverthink.kylos.pl/transbet/img/shovel-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Kruszywa budowlane</h3>
+                <p class="mb-5 text-base text-gray-600">Prowadzimy sprzedaż wraz z dostawą kruszyw, potrzebnych przy każdej budowie.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <div class="px-8 py-8 mx-auto sm:py-10 lg:py-20 max-w-7xl">
+    <div class="relative py-6 overflow-hidden bg-gray-50 lg:py-12 md:px-6 lg:p-16 lg:flex lg:items-center lg:justify-between md:bg-purple-1000" data-primary="purple-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+        <div class="relative p-6 rounded-lg md:p-0 md:pb-4">
+            <h2 class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10">Zamów beton</h2>
+            <p class="w-full mt-5 text-base leading-6 text-gray-500 md:w-3/4" data-primary="pink-600">Z przyjemnością odpowiemy na wszelkie pytania dotyczące naszej oferty.</p>
+        </div>
+        <div class="relative flex flex-col items-center w-full px-6 space-y-5 md:space-x-5 md:space-y-0 md:flex-row md:w-auto lg:flex-shrink-0 md:px-0">
+          <a class="inline-block relative shadow-2xl z-20 px-8 py-3 mb-3 leading-loose text-white transition duration-200 bg-yellow-500 shadow-2xl lg:mb-0 lg:mr-3 lg:w-auto bg-secondary hover:bg-black"
+          href="#_">Zamów beton</a>
+            <a href="#_" class="text-white">Try it free</a>
+        </div>
+    </div>
+</div>
+  <!-- BLOG -->
+  <section class="pt-20 pb-32 overflow-hidden">
+    <div class="container px-4 max-w-7xl mx-auto">
+      <div class="mb-20 text-left md:max-w-lg">
+        <h2 class="mb-4 text-3xl font-semibold text-gray-900 font-heading">Aktualności</h2>
+        <p class="text-lg text-gray-500">Zobacz jak wygląda nasza praca od środka. Na bieżąco możesz sprawdzać co u nas słychać i dowiadywać się o ważnych rzeczach z życia firmy.</p>
+      </div>
+      <div class="flex flex-wrap -m-9">
+        <div class="w-full md:w-1/2 p-9">
+          <a class="group" href="#">
+            <div class="flex flex-col relative z-20 mb-5 overflow-hidden">
+              <img class="transition relative z-20 duration-500 ease-out transform group-hover:scale-110" src="https://transbet.com.pl/wp-content/uploads/2016/01/238387511_992360794642151_8340733626808411585_n.jpg" alt="">
+            </div>
+            <h2 class="text-xs font-medium text-gray-500 mb-2 uppercase font-heading tracking-px">30 lipca 2022</h2>
+            <p class="mb-4 text-xl font-medium text-gray-900 font-heading">Rozbudowa podziemnej trasy turystycznej w Przemyślu</p>
+                            <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block mt-4 text-base transition duration-150 ease hover:text-yellow-500">
+                  <span class="block mb-1">Czytaj więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-yellow-500" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                  </span>
+              </a>
+          </a>
+        </div>
+        <div class="w-full md:w-1/2 p-9">
+          <a class="group" href="#">
+            <div class="flex flex-col mb-5 overflow-hidden">
+              <img class="transition duration-500 ease-out transform group-hover:scale-110" src="https://ml4d5ydfysph.i.optimole.com/gbblCDQ-JfCZCkmJ/w:1024/h:682/q:mauto/https://transbet.com.pl/wp-content/uploads/2022/06/282767035_1166899310521631_5626837580230741236_n.jpg" alt="">
+            </div>
+            <h2 class="text-xs font-medium text-gray-500 mb-2 uppercase font-heading tracking-px">6 czerwca 2022</h2>
+            <p class="mb-4 text-xl font-medium text-gray-900 font-heading">Transbet na pikniku osiedla Infiore Park w Przemyślu</p>
+                            <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block mt-4 text-base transition duration-150 ease hover:text-yellow-500">
+                  <span class="block mb-1">Czytaj więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-yellow-500" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="yellow-500" style="display: none;"></span>
+                  </span>
+              </a>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+    <script async>
+        window.addEventListener("load", function () {
+            const bgv = document.getElementById("bgvid");
+
+            // what jQuery checks under the hood
+            const visible = bgv.offsetWidth ||
+                bgv.offsetHeight ||
+                bgv.getClientRects().length;
+
+            if (visible) {
+                const children = bgv.getElementsByTagName("source");
+
+                for (let i = 0; i < children.length; ++i) {
+                    children[i].src = children[i].dataset.src;
+                }
+            }
+
+            bgv.load();
+        });
+    </script>
+    <script>
+        function myFunction() {
+            document.getElementById("cta").style.display =
+                "none";
+        }
+    </script>

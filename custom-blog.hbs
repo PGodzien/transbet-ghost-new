@@ -1,0 +1,41 @@
+{{!< default}}
+<div>
+
+{{#post}}
+<div class="py-16 bg-gray-50">  
+    <div class="container px-6 m-auto text-gray-600 max-w-7xl md:px-12 xl:px-6">
+        <div class="space-y-2">
+          <h2 class="text-2xl font-bold text-gray-900 md:text-4xl">{{title}}</h2>
+          <p class="text-lg">
+            Informacje o optymalizacji procesów biznesowych i zagadnienia dotyczące wsparcia działania firmy. Przydatne informacje dotyczące systemów informatycznych i ich zastosowania w przedsiębiorstwie.
+          </p>
+        </div>
+    </div>
+</div>        
+<div class="py-16">  
+    <div class="container px-6 m-auto text-gray-600 max-w-7xl md:px-12 xl:px-6">
+
+        <div class="grid gap-12 md:grid-cols-2">
+
+{{#get "posts" filter="tags:[blog]"}}
+    {{#foreach posts}}
+        {{> "card"}} {{!-- partials/card.hbs --}}
+
+   {{/foreach}}
+{{/get}}
+
+        </div>
+    </div>
+</div>                  
+ {{/post}}
+                            
+
+
+
+
+
+
+</div>
+
+
+          
