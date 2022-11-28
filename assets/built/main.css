@@ -2544,6 +2544,10 @@ select {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(53 74 121 / var(--tw-bg-opacity)) !important;
 }
+.hover\:bg-yellow-500:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(234 179 8 / var(--tw-bg-opacity)) !important;
+}
 .hover\:bg-opacity-60:hover {
   --tw-bg-opacity: 0.6 !important;
 }

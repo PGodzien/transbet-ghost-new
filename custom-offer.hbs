@@ -1,24 +1,171 @@
-{{!< default}} {{#post}} <div class="relative">
-    <img class="absolute inset-0 object-cover object-center w-full h-full" src="{{feature_image}}" alt="" />
-    <div aria-hidden="true"
-        class="absolute inset-0 w-full h-full bg-gradient-to-r from-black via-primary to-transparent opacity-80"></div>
-    <div class="container relative px-6 m-auto md:px-12 lg:px-6">
-        <div class="py-40 mb-12 space-y-16 md:mb-20 md:py-56 lg:w-8/12 lg:mx-auto">
-            <h1 class="text-3xl font-bold text-white sm:text-4xl md:text-5xl">
-                {{title}}
-            </h1>
-            {{#if custom_excerpt}}<p class="text-lg text-white md:text-xl">{{custom_excerpt}}</p>{{/if}}
-        </div>
-    </div>
-    </div>
+{{!< default}}
+{{#post}}
     <div class="">
-        <section class="pb-16 bg-white background-position: center top;">
-            <div class="mx-auto">
-                <div
-                    class="px-4 mx-auto mb-8 text-lg font-medium leading-loose prose text-gray-500 md:max-w-5xl md:text-xl">
-                    {{content}}
-                </div>
+<section>
+    <div class="relative w-full overflow-hidden">
+      <div class="relative flex items-center justify-end overflow-hidden bg-black">
+          <div class="absolute inset-0 z-10 opacity-50 bg-gradient-to-b from-black via-black to-transparent"></div>
+          {{#if feature_image}}
+          <div class="absolute inset-0 bg-center bg-cover bg-norepeat" style="background-image: url({{feature_image}}"></div>
+          {{/if}}
+          <div class="container relative z-20 px-6 m-auto mx-auto max-w-7xl md:px-12 lg:px-7">
+              <div class="flex flex-wrap items-center px-2 md:px-0">
+                  <div class="relative text-white md:py-12 ">
+                    <div class="relative z-20 px-16 py-12">
+                      <!-- <div class="absolute z-10 w-full h-full shadow-2xl -top-5 left-5 md:backdrop-blur-sm md:bg-black md:bg-opacity-20"></div> -->
+                      <h2 class="relative z-20 text-4xl font-extrabold uppercase shadow-2xl lg:text-6xl">
+                          <span>{{title}}</span>
+                      </h2>
+                      </div>
+                  </div>
+                  <div class="relative h-full min-w-xl w-xl ">
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+  </div>
+  <!-- TEAM -->
+</section>
+ <section class="relative pt-16 pb-16 overflow-hidden bg-gray-50">
+    <div class="container px-4 mx-auto mb-12">
+      <h2 class="mb-24 text-3xl font-semibold text-center text-gray-900 font-heading">Oferta naszej betoniarnii</h2>
+      <div class="flex flex-wrap mx-auto -m-8 max-w-7xl">
+        <div class="w-full p-8 transition duration-200 bg-transparent border-b border-gray-200 md:w-1/3 hover:bg-secondary md:border-r">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-12 h-auto" src="http://adverthink.kylos.pl/transbet/img/concrete-mixer-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Beton</h3>
+                <p class="mb-5 text-base text-gray-600">Tworzymy mieszanki betonowe według indywidualnych potrzeb Klienta lub inwestycji.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="secondary" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
             </div>
-        </section>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent border-b border-r border-gray-200 md:w-1/3 hover:bg-secondary">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-12 h-auto" src="http://adverthink.kylos.pl/transbet/img/brick-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Produkty betonowe</h3>
+                <p class="mb-5 text-base text-gray-600">Prowadzimy produkcję oraz sprzedaż wyrobów betonowych.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="secondary" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent border-b border-gray-200 md:w-1/3 hover:bg-secondary">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-8 h-auto" src="http://adverthink.kylos.pl/transbet/img/laboratory-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Laboratorium betonowe</h3>
+                <p class="mb-5 text-base text-gray-600">Posiadamy przyzakładowe laboratorium badawcze betonu i jego składników.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="secondary" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent border-r border-gray-200 md:w-1/3 hover:bg-secondary">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-12 h-auto" src="http://adverthink.kylos.pl/transbet/img/excavator-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Sprzęt i wynajem</h3>
+                <p class="mb-5 text-base text-gray-600">Nasza wytwórnia posiada duże oraz młode zaplecze sprzętowe.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="secondary" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent border-r border-gray-200 md:w-1/3 hover:bg-secondary">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-10 h-auto" src="http://adverthink.kylos.pl/transbet/img/welder-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Wyroby hutnicze</h3>
+                <p class="mb-5 text-base text-gray-600">Prowadzimy handel wyrobami hutniczymi. Dostarczamy stal pod wskazane miejsce autem z przyczepą (dłużycą).</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="secondary" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="w-full p-8 transition duration-200 bg-transparent md:w-1/3 hover:bg-secondary">
+          <a class="group" href="#">
+            <div class="flex flex-wrap -m-4">
+              <div class="w-auto p-4">
+                <img class="w-10 h-auto" src="http://adverthink.kylos.pl/transbet/img/shovel-orange.png" alt="">
+              </div>
+              <div class="flex-1 p-4 ">
+                <h3 class="mb-5 text-lg font-bold text-gray-900 font-heading">Kruszywa budowlane</h3>
+                <p class="mb-5 text-base text-gray-600">Prowadzimy sprzedaż wraz z dostawą kruszyw, potrzebnych przy każdej budowie.</p>
+                <a href="#_" x-data="{ hover: false }" @mouseenter="hover = true" @mouseleave="hover = false" class="relative inline-block text-base transition duration-150 ease hover:text-white">
+                  <span class="block mb-1">Zobacz więcej</span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span class="absolute inset-0 inline-block w-full h-1 h-full transform translate-x-0 border-t border-black"></span>
+                  </span>
+                  <span class="absolute bottom-0 left-0 inline-block w-full h-1 -mb-1 overflow-hidden">
+                      <span x-show="hover" class="absolute inset-0 inline-block w-full h-1 h-full transform border-t border-white" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="-translate-x-full" x-transition:enter-end="translate-x-0" x-transition:leave="transition ease-out duration-300" x-transition:leave-start="translate-x-0" x-transition:leave-end="translate-x-full" data-primary="secondary" style="display: none;"></span>
+                  </span>
+              </a>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
     </div>
-    {{/post}}
+  </section>
+    </div>
+{{/post}}
