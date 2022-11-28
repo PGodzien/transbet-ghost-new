@@ -4,7 +4,7 @@
             src="{{feature_image}}"
             alt="cover"
             loading="lazy"
-            class="relative object-cover object-top w-full h-96"
+            class="relative z-20 object-cover object-top w-full transition duration-500 ease-out transform h-96 group-hover:scale-110"
         />
         <div class="space-y-2">
             <div class="space-y-4">
@@ -53,12 +53,13 @@
     </div>
 {{else}}
     <div class="space-y-4 group">
-        <img
-            src="{{feature_image}}"
-            alt="cover"
-            loading="lazy"
-            class="relative object-cover object-top w-full h-96"
-        />
+        <div class="relative z-20 flex flex-col mb-5 overflow-hidden">
+            <img
+                src="{{feature_image}}"
+                alt="cover"
+                loading="lazy"
+                class="relative z-20 object-cover object-top w-full transition duration-500 ease-out transform h-96 group-hover:scale-110"
+            /></div>
         <div class="space-y-2">
             <p class="">{{date format="DD-MM-YYYY"}}
                 <span class="font-bold">{{tags from="2" to="2"}}</span>
