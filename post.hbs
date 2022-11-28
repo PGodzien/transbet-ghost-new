@@ -1,61 +1,46 @@
-{{!< default}}
+{{!< default}} {{#post}}
 
-{{#post}}
 
-    <article class="{{post_class}}">
-
-        <header>
-            <span><time datetime="{{date format="YYYY-MM-DD"}}">{{date
-                        format="D MMM YYYY"
-                    }}</time>{{reading_time}}</span>
-            <h1>{{title}}</h1>
-
-            {{#if custom_excerpt}}
-                <p>{{custom_excerpt}}</p>
-            {{/if}}
-
+    <!-- BLOG -->
+    <section class="pt-20 overflow-hidden 2xl:pt-40">
+        <div class="container px-4 mx-auto">
             {{#if feature_image}}
-                <img
-                    srcset="{{img_url feature_image size="s"}} 300w,
-                    {{img_url feature_image size="m"}} 600w,
-                    {{img_url feature_image size="l"}} 1000w,
-                    {{img_url feature_image size="xl"}} 2000w"
-                    sizes="(max-width: 1000px) 1000px, 2000px"
-                    loading="lazy"
-                    src="{{img_url feature_image size="xl"}}"
-                    alt="{{title}}"
-                />
+            <img class="object-cover w-full mb-24 h-96" srcset="{{img_url feature_image size=" s"}} 300w, {{img_url
+                feature_image size="m" }} 600w, {{img_url feature_image size="l" }} 1000w, {{img_url feature_image
+                size="xl" }} 2000w" sizes="(max-width: 1000px) 1000px, 2000px" loading="lazy"
+                src="{{img_url feature_image size=" xl"}}" alt="{{title}}" />
             {{/if}}
-        </header>
-
-        <div class="prose mx-auto text-xl text-gray-200 leading-normal">
-            {{content}}
-        </div>
-
-        <footer>
-
-            <div>
-                Written by
-                {{#foreach authors}}<a href="{{url}}">{{name}}</a>{{/foreach}}
+            <div class="max-w-5xl mx-auto text-center">
+                <span
+                    class="text-xl font-bold text-transparent lg:text-2xl bg-clip-text bg-gradient-to-br from-yellow-200 to-orange-600">{{tags}}</span>
+                <h2 class="text-5xl font-bold text-gray-800 mt-7 mb-14 font-heading">{{title}}</h2>
+                <div class="mx-auto my-4 text-center">{{date format="DD-MM-YYYY"}} / {{reading_time minute="1 min. czytania" minutes="% minuty czytania" }}</div>
+                {{#if custom_excerpt}}
+                <p class="max-w-2xl pb-12 mx-auto mb-12 overflow-auto text-xl border-b border-gray-200">
+                    {{custom_excerpt}}</p>
+                {{/if}}
+                <div class="max-w-4xl mx-auto text-2xl leading-loose prose text-left text-gray-600">
+                    <p class="">{{content}}</p>
+                </div>
             </div>
-
-            {{!
-        <section class="gh-post-comments">
-            If you want to embed comments, this is a good place to do it!
-        </section>
-        }}
-
-        </footer>
-
-    </article>
-
-    <aside>
-        <div>
-            {{#next_post}}<a href="{{url}}"><h4>{{title}}</h4></a>{{/next_post}}
         </div>
-        <div>
-            {{#prev_post}}<a href="{{url}}"><h4>{{title}}</h4></a>{{/prev_post}}
+    </section>
+    <!-- CTA -->
+    <div class="px-8 py-8 mx-auto sm:py-10 lg:py-20 max-w-7xl">
+        <div class="relative py-6 overflow-hidden bg-gray-50 lg:py-12 md:px-6 lg:p-16 lg:flex lg:items-center lg:justify-between md:bg-purple-1000"
+            data-primary="purple-600" data-rounded="rounded-lg" data-rounded-max="rounded-full">
+            <div class="relative p-6 rounded-lg md:p-0 md:pb-4">
+                <h2 class="text-3xl font-extrabold leading-9 tracking-tight sm:text-4xl sm:leading-10">Zamów beton</h2>
+                <p class="w-full mt-5 text-base leading-6 text-gray-500 md:w-3/4" data-primary="pink-600">Z
+                    przyjemnością odpowiemy na wszelkie pytania dotyczące naszej oferty.</p>
+            </div>
+            <div
+                class="relative flex flex-col items-center w-full px-6 space-y-5 md:space-x-5 md:space-y-0 md:flex-row md:w-auto lg:flex-shrink-0 md:px-0">
+                <a class="relative z-20 inline-block px-8 py-3 mb-3 leading-loose text-white transition duration-200 bg-yellow-500 shadow-2xl lg:mb-0 lg:mr-3 lg:w-auto bg-secondary hover:bg-black"
+                    href="#_">Zamów beton</a>
+                <a href="#_" class="text-white">Try it free</a>
+            </div>
         </div>
-    </aside>
-
-{{/post}}
+    </div>
+    </div>
+    {{/post}}
