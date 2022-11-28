@@ -60,7 +60,7 @@
             class="relative object-cover object-top w-full h-96"
         />
         <div class="space-y-2">
-            <p class="">{{date format="YYYY-MM-DD"}}
+            <p class="">{{date format="DD-MM-YYYY"}}
                 <span class="font-bold">{{tags from="2" to="2"}}</span>
             </p>
             <div class="space-y-4">
@@ -69,7 +69,7 @@
                         class=""
                     >{{title}}</a></h4>
                 {{#if custom_excerpt}}
-                    <p class="text-gray-600 line-clamp-3">{{custom_excerpt}}</p>
+                    <p class="text-gray-600 line-clamp-2">{{custom_excerpt}}</p>
                 {{/if}}
             </div>
         </div>
