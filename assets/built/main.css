@@ -2860,6 +2860,15 @@ select {
     line-height: 1.5rem !important;
   }
 
+  .md\:text-2xl {
+    font-size: 1.5rem !important;
+    line-height: 2rem !important;
+  }
+
+  .md\:leading-normal {
+    line-height: 1.5 !important;
+  }
+
   .md\:backdrop-blur-sm {
     --tw-backdrop-blur: blur(4px) !important;
     -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia) !important;
