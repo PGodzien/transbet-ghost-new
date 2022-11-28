@@ -1529,6 +1529,9 @@ select {
 .max-w-4xl {
   max-width: 56rem !important;
 }
+.max-w-6xl {
+  max-width: 72rem !important;
+}
 .flex-1 {
   -webkit-box-flex: 1 !important;
       -ms-flex: 1 1 0% !important;
@@ -2050,6 +2053,9 @@ select {
 .pt-5 {
   padding-top: 1.25rem !important;
 }
+.pr-5 {
+  padding-right: 1.25rem !important;
+}
 .text-left {
   text-align: left !important;
 }
@@ -2117,6 +2123,9 @@ select {
 .font-light {
   font-weight: 300 !important;
 }
+.font-normal {
+  font-weight: 400 !important;
+}
 .uppercase {
   text-transform: uppercase !important;
 }
@@ -2143,6 +2152,9 @@ select {
 }
 .leading-normal {
   line-height: 1.5 !important;
+}
+.leading-7 {
+  line-height: 1.75rem !important;
 }
 .tracking-tight {
   letter-spacing: -0.025em !important;
@@ -2569,6 +2581,15 @@ select {
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
+.prose-h3\:-ml-36 :is(:where(h3):not(:where([class~="not-prose"] *))) {
+  margin-left: -9rem !important;
+}
+.prose-h3\:text-left :is(:where(h3):not(:where([class~="not-prose"] *))) {
+  text-align: left !important;
+}
+.prose-h3\:text-right :is(:where(h3):not(:where([class~="not-prose"] *))) {
+  text-align: right !important;
+}
 @media (min-width: 640px) {
 
   .sm\:order-last {
@@ -2746,6 +2767,14 @@ select {
     width: 33.333333% !important;
   }
 
+  .md\:w-3\/12 {
+    width: 25% !important;
+  }
+
+  .md\:w-4\/5 {
+    width: 80% !important;
+  }
+
   .md\:max-w-3xl {
     max-width: 48rem !important;
   }
@@ -2891,6 +2920,10 @@ select {
 
   .md\:pb-4 {
     padding-bottom: 1rem !important;
+  }
+
+  .md\:pl-2 {
+    padding-left: 0.5rem !important;
   }
 
   .md\:text-left {
@@ -3138,12 +3171,21 @@ select {
     padding-right: 3rem !important;
   }
 
+  .xl\:px-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
   .xl\:pt-24 {
     padding-top: 6rem !important;
   }
 
   .xl\:pr-32 {
     padding-right: 8rem !important;
+  }
+
+  .xl\:pr-12 {
+    padding-right: 3rem !important;
   }
 }
 @media (min-width: 1536px) {
