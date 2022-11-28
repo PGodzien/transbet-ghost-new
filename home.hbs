@@ -389,7 +389,7 @@
     </div>
   </div>
   <!-- BLOG -->
-  <section class="pt-20 pb-32 overflow-hidden">
+  <section class="overflow-hidden">
   <div class="py-16 bg-gray-50">
     <div class="container px-6 m-auto text-gray-600 max-w-7xl md:px-12 xl:px-6">
       <div class="space-y-2">
@@ -404,7 +404,7 @@
   <div class="py-16">
     <div class="container px-6 m-auto text-gray-600 max-w-7xl md:px-12 xl:px-6">
       <div class="grid gap-12 md:grid-cols-2">
-        {{#get "posts" filter=""}}
+        {{#get "posts" filter="" limit="2"}}
           {{#foreach posts}}
             {{> "card"}} {{!-- partials/card.hbs --}}
           {{/foreach}}
