@@ -6,7 +6,7 @@
   margin-right: auto;
   max-width: 100%;
   border-width: 2px !important;
-  border-radius: 0.75rem !important;
+
   border-color: #e5e7eb;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
 }
@@ -23,7 +23,7 @@
   margin:auto;
   max-width: 18vw;
   border-width: 1px !important;
-  border-radius: 0.75rem !important;
+
   border-color: #e5e7eb;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
 }
@@ -34,7 +34,7 @@
   margin:auto;
   max-width: 80vw;
   border-width: 1px !important;
-  border-radius: 0.75rem !important;
+
   border-color: #e5e7eb;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
 }
