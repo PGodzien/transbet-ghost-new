@@ -404,7 +404,7 @@
   <div class="py-16">
     <div class="container px-6 m-auto text-gray-600 max-w-7xl md:px-12 xl:px-6">
       <div class="grid gap-12 md:grid-cols-2">
-        {{#get "posts" filter="" limit="2"}}
+        {{#get "posts" filter="tags:[blog]" limit="2"}}
           {{#foreach posts}}
             {{> "card"}} {{!-- partials/card.hbs --}}
           {{/foreach}}

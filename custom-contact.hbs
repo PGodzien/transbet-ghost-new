@@ -1,198 +1,203 @@
-{{!< default}}
-{{#post}}
-    <style>
-        #cta { display: none; }
-    </style>
-    <div class="relative">
-
-        <img
-            class="absolute inset-0 object-cover object-center w-full h-full"
-            src="{{feature_image}}"
-            alt=""
-        />
-        <div
-            aria-hidden="true"
-            class="absolute inset-0 w-full h-full bg-gradient-to-r from-black via-primary to-transparent opacity-80"
-        >
-        </div>
-        <div class="container relative px-6 m-auto md:px-12 lg:px-6">
-            <div class="py-40 space-y-16 md:py-56 lg:w-8/12 lg:mx-auto">
-                <h1
-                    class="text-3xl font-bold text-white sm:text-4xl md:text-5xl"
-                >
-                    {{title}}
-                </h1>
-                {{#if custom_excerpt}}<p
-                        class="text-lg text-white md:text-xl"
-                    >{{custom_excerpt}}</p>{{/if}}
-            </div>
-        </div>
-
-    </div>
-    {{! <div class="py-16 bg-gray-50">
-        <div class="container px-6 m-auto text-gray-600 max-w-7xl">
-            <div class="space-y-2">
-                <h2 class="text-2xl font-bold text-gray-900 md:text-4xl">Zapraszamy do kontaktu</h2>
-                <p class="text-lg">Jeśli szukasz rozwiązań informatycznych dla
-                    swojej firmy, skontaktuj się z nami. Przygotujemy ofertę
-                    dopasowaną również do specyfiki działalności i potrzeb
-                    Twojej firmy!</p>
-            </div>
-        </div>
-    </div> }}
-
-    <section class="relative py-24 mx-auto overflow-hidden max-w-7xl">
-        <div class="container relative z-10 px-4 mx-auto">
-            <div class="flex flex-wrap -m-6">
-                <div class="w-full p-6 md:w-1/2">
-                    <div class="md:max-w-lg mb-14">
-                        <h2
-                            class="text-3xl font-bold mb-7 font-heading"
-                        >Skontaktuj się z</h2>
-                        <p class="text-lg text-gray-400">Masz pytania? Umów się
-                            na bezpłatną konsultację!</p>
-                    </div>
-                    <div class="flex flex-wrap">
-                        <div class="w-full">
-                            <div class="md:max-w-md">
-                                <h3
-                                    class="mb-4 text-xl font-bold font-heading"
-                                >Kontakt</h3>
-                                <p class="text-lg text-gray-400">email:
-                                    <a  id="mailKontakt"
-                                        href="mailto:cezary.maciejewski@certusoft.pl"
-                                        class=""
-                                    >cezary.maciejewski@certusoft.pl</a>
-                                </p>
-                                <p class="text-lg text-gray-400">tel:
-                                    <a id="phoneKontakt" href="tel:+48608448500" class="">+48 608
-                                        448 500</a></p>
+{{!< default}} {{#post}} <div class="">
+    <section>
+        <div class="relative w-full overflow-hidden">
+            <div class="relative flex items-center justify-end overflow-hidden bg-black">
+                <div class="absolute inset-0 z-10 opacity-50 bg-gradient-to-b from-black via-black to-transparent">
+                </div>
+                {{#if feature_image}}
+                <div class="absolute inset-0 bg-center bg-cover bg-norepeat"
+                    style="background-image: url({{feature_image}}"></div>
+                {{/if}}
+                <div class="container relative z-20 px-6 m-auto mx-auto max-w-7xl md:px-12 lg:px-7">
+                    <div class="flex flex-wrap items-center px-2 md:px-0">
+                        <div class="relative text-white md:py-12 ">
+                            <div class="relative z-20 px-16 py-12">
+                                <!-- <div class="absolute z-10 w-full h-full shadow-2xl -top-5 left-5 md:backdrop-blur-sm md:bg-black md:bg-opacity-20"></div> -->
+                                <h2 class="relative z-20 text-4xl font-extrabold uppercase shadow-2xl lg:text-6xl">
+                                    <span>{{title}}</span>
+                                </h2>
                             </div>
                         </div>
-                        <div class="w-full mt-8">
-                            <div class="md:max-w-xs">
-                                <h3
-                                    class="mb-4 text-xl font-bold font-heading"
-                                >Biuro</h3>
-                                <p class="text-lg text-gray-400">Al. Prymasa
-                                    Tysiąclecia 83A lok. 137</p>
-                                <p class="text-lg text-gray-400">01-242 Warszawa</p>
-                                <p
-                                    class="text-lg text-gray-400 underline underline-offset-4"
-                                ><a
-                                        id="dojazdMapa"
-                                        href="https://www.google.com/maps/dir//Aleja+Prymasa+Tysiąclecia+83a%2Flok+137,+01-242+Warszawa/@52.2261266,20.9547576,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x471ecb6779d38745:0x19a3c44e2b16d0fe!2m2!1d20.9569516!2d52.2261266!3e0"
-                                        target="blank"
-                                    >sprawdź dojazd</a></p>
-                            </div>
+                        <div class="relative h-full min-w-xl w-xl ">
                         </div>
                     </div>
                 </div>
-                <div class="w-full p-6 md:w-1/2">
-                    <div
-                        class="max-w-lg p-8 mx-auto bg-white shadow-xl rounded-xl"
-                    >
-                        <form
-                            class="flex flex-wrap max-w-xl mx-auto"
-                            action="https://formspree.io/f/xeqnprjk"
-                            id="my-form"
-                            method="POST"
-                        >
-                            <div class="w-full mb-5">
-                                <input
-                                    class="w-full px-5 py-4 text-base text-gray-400 placeholder-gray-400 bg-transparent border border-gray-300 rounded-lg outline-none focus:ring focus:ring-secondary"
-                                    type="text" name="name" value=""
-                                    placeholder="Imię i nazwisko"
-                                />
+
+            </div>
+        </div>
+        </div>
+        <!-- TEAM -->
+    </section>
+    <!-- CONTACT -->
+    <section class="pt-24 overflow-hidden bg-white pb-36">
+  <div class="container px-4 mx-auto">
+    <h2 class="text-6xl font-bold leading-none text-center mb-7 md:text-8xl xl:text-10xl font-heading tracking-px-n">Let&rsquo;s see how it works</h2>
+    <p class="mx-auto mb-20 font-sans text-lg text-center text-gray-900 md:max-w-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elemen tum.</p>
+    <div class="relative overflow-hidden bg-fixed bg-center bg-no-repeat bg-cover" style="height: 648px; background-image: url({{feature_image}});">
+      <div class="absolute top-0 left-0 h-full overflow-y-auto p-14 md:p-20 md:pb-0">
+        <div class="flex flex-wrap">
+          <div class="w-full">
+            <div class="flex flex-wrap -m-3">
+              <div class="w-auto p-3">
+                <svg width="35" height="35" viewbox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17.5" cy="17.5" r="17.5" fill="#4F46E5"></circle>
+                  <path d="M11.667 18.3333L15.0003 21.6666L23.3337 13.3333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <img class="mx-auto" src="flaro-assets/images/how-it-works/line3.svg" alt="">
+              </div>
+              <div class="flex-1 p-3">
+                <div class="pb-8 md:max-w-xs">
+                  <p class="mb-5 text-sm font-semibold text-gray-400 uppercase tracking-px">Step 1</p>
+                  <h3 class="mb-2 text-xl font-bold leading-normal text-white">Choose A Package</h3>
+                  <p class="font-medium leading-relaxed text-gray-300">Lorem ipsum dolor sit amet, to the consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex flex-wrap -m-3">
+              <div class="w-auto p-3">
+                <svg width="35" height="35" viewbox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17.5" cy="17.5" r="17.5" fill="#4F46E5"></circle>
+                  <path d="M11.667 18.3333L15.0003 21.6666L23.3337 13.3333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <img class="mx-auto" src="flaro-assets/images/how-it-works/line3.svg" alt="">
+              </div>
+              <div class="flex-1 p-3">
+                <div class="pb-8 md:max-w-xs">
+                  <p class="mb-5 text-sm font-semibold text-gray-400 uppercase tracking-px">Step 2</p>
+                  <h3 class="mb-2 text-xl font-bold leading-normal text-white">Pay with One Click</h3>
+                  <p class="font-medium leading-relaxed text-gray-300">Lorem ipsum dolor sit amet, to the consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <div class="flex flex-wrap -m-3">
+              <div class="w-auto p-3">
+                <svg width="35" height="35" viewbox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="17.5" cy="17.5" r="17" stroke="#CBD5E1"></circle>
+                  <path d="M11.667 18.3333L15.0003 21.6666L23.3337 13.3333" stroke="#94A3B8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div class="flex-1 p-3">
+                <div class="pb-8 md:max-w-xs">
+                  <p class="mb-5 text-sm font-semibold text-gray-400 uppercase tracking-px">Step 3</p>
+                  <h3 class="mb-2 text-xl font-bold leading-normal text-white">Get Instant Access</h3>
+                  <p class="font-medium leading-relaxed text-gray-300">Lorem ipsum dolor sit amet, to the consectetur adipiscing elit.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="relative overflow-hidden bg-gray-100">
+        <div class="absolute bottom-0 right-0 hidden w-full h-full lg:block lg:w-4/12">
+            <img class="object-cover w-full h-full" src="http://adverthink.kylos.pl/transbet/img/footer_img.jpg" alt="">
+        </div>
+        <div class="container relative px-4 mx-auto">
+            <div class="mx-auto max-w-7xl">
+                <div class="flex flex-wrap py-10 -mx-4 2xl:py-20">
+                    <div class="w-full px-4 mb-8 lg:w-2/5 lg:mb-0">
+                        <span class="text-lg font-bold text-yellow-500">Kontakt z nami</span>
+                        <h2 class="mt-8 mb-12 text-3xl font-bold md:mb-20 font-heading">Zapraszamy do kontaktu</h2>
+                        <p class="mb-12 text-base text-gray-700 md:text-lg"> <b>Dane firmy</b> <br>
+
+                            TRANSBET BETONIARNIE GROCHOWICZ Sp. K. <br>
+
+                            ul. Topolowa 5 <br>
+                            37-700 Przemyśl <br>
+                            NIP : 795-10-07-169</p>
+                        <div class="flex py-6 border-b border-gray-50">
+
+                            <span class="flex items-center justify-center w-12 h-12 mr-8 bg-black">
+                                <svg class="w-4 h-4" width="18" height="18" viewbox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M17.9347 13.3167C17.811 12.6058 17.2022 12.0401 16.4551 11.94L12.3077 11.3855C11.555 11.2832 10.8101 11.6825 10.4984 12.3528C10.4185 12.5237 10.3521 12.7014 10.2981 12.8848C9.13582 12.4 8.09277 11.7004 7.19375 10.8018C6.29473 9.90315 5.59374 8.86053 5.10992 7.6987C5.29332 7.64471 5.4711 7.57835 5.64213 7.4985C6.31274 7.18695 6.70993 6.44351 6.60866 5.69108L6.05394 1.54536C5.9538 0.797426 5.38784 0.188953 4.66434 0.0641091C4.40105 0.0202451 4.18164 0 3.97348 0C2.61201 0 1.32368 0.71982 0.612565 1.87716C-0.157059 3.13122 -0.0501675 4.73507 0.128736 5.9925C0.533802 8.84029 1.99766 11.7038 4.14451 13.8498C5.74002 15.4446 7.71246 16.6402 9.84693 17.306C10.9339 17.6457 12.2942 18 13.605 18C14.5851 18 15.537 17.802 16.3235 17.2498C17.3733 16.5109 18 15.3052 18 14.0196C18 13.8115 17.9797 13.5911 17.9347 13.3167Z"
+                                        fill="white"></path>
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-light text-gray-400">Przemyśl: <span
+                                        class="text-lg font-light text-black">888 839 617</span> </p>
+                                <p class="font-light text-gray-400">Jarosław: <span
+                                        class="text-lg font-light text-black">660 788 125</span> </p>
+                                <p class="font-light text-gray-400">Radymno: <span
+                                        class="text-lg font-light text-black">660 788 125</span> </p>
                             </div>
-                            <div class="w-full mb-5">
-                                <input
-                                    class="w-full px-5 py-4 text-base text-gray-400 placeholder-gray-400 bg-transparent border border-gray-300 rounded-lg outline-none focus:ring focus:ring-secondary"
-                                    type="email" name="email" value="" required
-                                    placeholder="Email*"
-                                />
+                        </div>
+                        <div class="flex items-center py-6 border-b border-gray-50">
+                            <span class="flex items-center justify-center w-12 h-12 mr-8 bg-black">
+                                <svg class="w-5 h-4" width="21" height="14" viewbox="0 0 21 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.8109 0H2.1878C0.981688 0 0 0.980499 0 2.18676V11.8119C0 13.0182 0.981688 14 2.1878 14H18.8122C20.0183 14 21 13.0182 21 11.8119V2.18676C20.9987 0.980499 20.017 0 18.8109 0ZM19.2492 4.73317L11.716 8.67092C11.3393 8.86387 10.9193 8.96887 10.4993 8.96887C10.0794 8.96887 9.66858 8.86387 9.28273 8.67092L1.74945 4.73317V2.75511L10.0872 7.11288C10.3405 7.24414 10.6555 7.24414 10.9101 7.11288L19.2479 2.75511V4.73317H19.2492Z"
+                                        fill="white"></path>
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-light text-gray-400">Przemyśl: <span
+                                        class="text-lg font-light text-black">biuro@transbet.com.pl</span> </p>
+                                <p class="font-light text-gray-400">Jarosław: <span
+                                        class="text-lg font-light text-black">maciej@transbet.com.pl</span> </p>
+                                <p class="font-light text-gray-400">Radymno: <span
+                                        class="text-lg font-light text-black">maciej@transbet.com.pl</span> </p>
                             </div>
-                            <div class="w-full mb-5">
-                                <input
-                                    class="w-full px-5 py-4 text-base text-gray-400 placeholder-gray-400 bg-transparent border border-gray-300 rounded-lg outline-none focus:ring focus:ring-secondary"
-                                    type="phone" name="phone" value=""
-                                    placeholder="Telefon"
-                                />
-                            </div>
-                            <div class="w-full mb-5"><textarea
-                                    class="w-full h-40 px-5 py-4 text-base text-gray-400 placeholder-gray-400 bg-transparent border border-gray-300 rounded-lg outline-none resize-none focus:ring focus:ring-secondary"
-                                    type="text" name="message" value=""
-                                    placeholder="Twoja wiadomość*"
-                                ></textarea></div>
-                            <div class="w-full mb-5">
-                                <div class="relative group">
-                                    <div
-                                        class="absolute top-0 left-0 w-full h-full transition duration-300 ease-out rounded-lg opacity-0 bg-gradient-cyan2 group-hover:opacity-50"
-                                    >
-                                    </div>
-                                    <button
-                                        class="w-full p-1 overflow-hidden text-xs font-semibold text-gray-900 uppercase rounded-md font-heading tracking-px"
-                                        id="my-form-button"
-                                        type="submit"
-                                    >
-                                        <div
-                                            class="relative p-5 overflow-hidden rounded-md px-11 bg-secondary"
-                                        >
-                                            <div
-                                                class="absolute top-0 left-0 w-full h-full transition duration-500 ease-in-out transform -translate-y-full bg-primary group-hover:-translate-y-0"
-                                            >
-                                            </div>
-                                            <p
-                                                class="relative z-10 text-white"
-                                            >Wyślij wiadomość</p>
-                                        </div>
-                                    </button>
-                                   
-                                        Wypełniając powyższy formularz, wyrażasz
-                                        zgodę na przetwarzanie danych osobowych
-                                        przez firmę Certusoft Sp. z o.o. Zgody
-                                        udzielasz dobrowolnie w celu udzielenia
-                                        odpowiedzi na Twoje zapytanie. W każdym
-                                        momencie możesz wycofać udzieloną zgodę.</p>
-                                    <p id="my-form-status" class="mt-4 font-bold text-green-700"></p>
-                                </div>
-                            </div>
-                        </form>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
-{{/post}}
-<script>
-        var form = document.getElementById("my-form");
+    <div class="flex flex-col justify-between md:flex-row">
+        <div class="relative z-20 w-full md:w-1/3"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.671078978862!2d22.807300315706975!3d49.77344387938773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b78da9dcd98d5%3A0x402bd86e6542ecdf!2sTransbet%20Betoniarnie!5e0!3m2!1spl!2spl!4v1667917596173!5m2!1spl!2spl"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div
+                class="absolute inset-0 z-30 px-6 py-4 text-center duration-300 opacity-100 hover:opacity-0 hover:invisible">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-orange-500 opacity-60 to-yellow-600">
+                </div>
+                <div class="relative flex flex-col items-center justify-center w-full h-full">
+                    <p class="mb-1 text-2xl font-bold text-white">Betoniarnia Przemyśl</p>
+                    <p class="mb-4 text-xl text-blue-50">Topolowa 5</p>
+                </div>
+            </div>
+        </div>
 
-        async function handleSubmit(event) {
-            event.preventDefault();
-            var status = document.getElementById("my-form-status");
-            var data = new FormData(event.target);
-            fetch(event.target.action, {
-                method: form.method,
-                body: data,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    status.innerHTML = "Dziękujemy za Twoje zgłoszenie! Wkrótce otrzymasz od nas pierwszą odpowiedź.";
-                    form.reset()
-                } else {
-                    response.json().then(data => {
-                        if (Object.hasOwn(data, 'errors')) {
-                            status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
-                        } else {
-                            status.innerHTML = "Oops! Coś poszło nie tak z wysyłką tej wiadomości."
-                        }
-                    })
-                }
-            }).catch(error => {
-                status.innerHTML = "Oops! Pojawił się problem z wysłaniem wiadomości."
-            });
-        }
-        form.addEventListener("submit", handleSubmit)
-    </script>
+        <div class="relative z-20 w-full md:w-1/3"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.671078978862!2d22.807300315706975!3d49.77344387938773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b78da9dcd98d5%3A0x402bd86e6542ecdf!2sTransbet%20Betoniarnie!5e0!3m2!1spl!2spl!4v1667917596173!5m2!1spl!2spl"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div
+                class="absolute inset-0 z-30 px-6 py-4 text-center duration-300 opacity-100 hover:opacity-0 hover:invisible">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-orange-500 opacity-60 to-yellow-600">
+                </div>
+                <div class="relative flex flex-col items-center justify-center w-full h-full">
+                    <p class="mb-1 text-2xl font-bold text-white">Betoniarnia Jarosław</p>
+                    <p class="mb-4 text-xl text-blue-50">Budowlanych 4</p>
+                </div>
+            </div>
+        </div>
+        <div class="relative z-20 w-full md:w-1/3"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2576.671078978862!2d22.807300315706975!3d49.77344387938773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473b78da9dcd98d5%3A0x402bd86e6542ecdf!2sTransbet%20Betoniarnie!5e0!3m2!1spl!2spl!4v1667917596173!5m2!1spl!2spl"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div
+                class="absolute inset-0 z-30 px-6 py-4 text-center duration-300 opacity-100 hover:opacity-0 hover:invisible">
+                <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-orange-500 opacity-60 to-yellow-600">
+                </div>
+                <div class="relative flex flex-col items-center justify-center w-full h-full">
+                    <p class="mb-1 text-2xl font-bold text-white">Betoniarnia Radymno</p>
+                    <p class="mb-4 text-xl text-blue-50">Kościuszki 2a</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {{/post}}
