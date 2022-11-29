@@ -7,8 +7,6 @@
   max-width: 100%;
   border-width: 2px !important;
 
-  border-color: #e5e7eb;
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
 }
 
 .kg-width-full img {
@@ -22,10 +20,8 @@
   .kg-image {
   margin:auto;
   max-width: 18vw;
-  border-width: 1px !important;
 
-  border-color: #e5e7eb;
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+
 }
 }
 
@@ -33,10 +29,8 @@
   .kg-image {
   margin:auto;
   max-width: 80vw;
-  border-width: 1px !important;
 
-  border-color: #e5e7eb;
-  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+
 }
 }
 
