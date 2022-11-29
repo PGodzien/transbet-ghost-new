@@ -1868,6 +1868,10 @@ select {
   --tw-gradient-to: rgb(0 0 0 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), #000, var(--tw-gradient-to) !important;
 }
+.via-secondary {
+  --tw-gradient-to: rgb(255 151 0 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), #ff9700, var(--tw-gradient-to) !important;
+}
 .to-transparent {
   --tw-gradient-to: transparent !important;
 }

@@ -10,7 +10,7 @@
         />
         <div
             aria-hidden="true"
-            class="absolute inset-0 w-full h-full bg-gradient-to-r from-black via-primary to-transparent opacity-80"
+            class="absolute inset-0 w-full h-full bg-gradient-to-r from-black via-secondary to-transparent opacity-80"
         ></div>
         <div class="container relative px-6 m-auto md:px-12 lg:px-6">
             <div
@@ -24,17 +24,6 @@
                 {{#if custom_excerpt}}<p
                         class="text-lg text-white md:text-xl"
                     >{{custom_excerpt}}</p>{{/if}}
-                <div class="md:flex items-center md:space-x-5 text-white">
-                    <p class="">Dla kogo: <br class="md:hidden">
-                        <span
-                            class="text-xl font-bold transition duration-200 lg:ml-2 hover:text-white text-secondary"
-                        >{{tags from="2" to="2"}}</span></p>
-                    <p class="hidden md:block">|</p>
-                    <p class="">Rodzaj działań: <br class="md:hidden">
-                        <span
-                            class="text-xl font-bold transition duration-200 lg:ml-2 hover:text-white text-secondary"
-                        >{{tags from="3" to="3"}}</span></p>
-                </div>
             </div>
         </div>
 
