@@ -1,0 +1,57 @@
+{{!< default}} {{#post}} <div class="">
+    <section>
+        <div class="relative w-full overflow-hidden">
+            <div class="relative flex items-center justify-end overflow-hidden bg-black">
+                <div class="absolute inset-0 z-10 opacity-50 bg-gradient-to-b from-black via-black to-transparent">
+                </div>
+                {{#if feature_image}}
+                <div class="absolute inset-0 bg-center bg-cover bg-norepeat"
+                    style="background-image: url({{feature_image}}"></div>
+                {{/if}}
+                <div class="container relative z-20 px-6 m-auto mx-auto max-w-7xl md:px-12 lg:px-7">
+                    <div class="flex flex-wrap items-center px-2 md:px-0">
+                        <div class="relative text-white md:py-12 ">
+                            <div class="relative z-20 px-16 py-12">
+                                <!-- <div class="absolute z-10 w-full h-full shadow-2xl -top-5 left-5 md:backdrop-blur-sm md:bg-black md:bg-opacity-20"></div> -->
+                                <h2 class="relative z-20 text-4xl font-extrabold uppercase lg:text-6xl">
+                                    <span>{{title}}</span>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="relative h-full min-w-xl w-xl ">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- TEAM -->
+    </section>
+    <section class="px-10 py-20 bg-white">
+        <div class="px-16 py-16 mx-auto bg-gray-100 max-w-7xl xl:px-24 xl:py-12">
+            <div class="relative flex flex-col items-center lg:flex-row">
+                <div class="flex-shrink-0 mb-4 lg:mb-0 lg:mr-10 lg:w-3/5">
+                    <span class="text-xs font-medium tracking-wider text-gray-400 uppercase">UE – Fundusze
+                        Europejskie</span>
+                    <h2 class="mt-3 text-3xl font-semibold sm:text-4xl">Nowatorski system<br> płyt drogowych</h2>
+                    <span class="block mt-8 text-lg text-gray-500">Naszym nowy produktem jest nowatorski system płyt
+                        drogowych o poprawionej wytrzymałości mechanicznej i odporności na warunki atmosferyczne.</span>
+                </div>
+                <div
+                    class="relative items-center justify-center flex-grow hidden w-full lg:flex lg:w-2/5 lg:justify-end">
+                    <img src="https://ml4d5ydfysph.i.optimole.com/gbblCDQ-wmUjZBxb/w:1753/h:714/q:mauto/https://transbet.com.pl/wp-content/uploads/2021/09/element2.png"
+                        class="object-cover h-auto transform scale-150 translate-x-10 w-96">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="pb-20 bg-white">
+            <div class="px-4 mx-auto prose md:text-2xl md:leading-normal">
+                {{content}}
+            </div>
+        </div>
+    </section>
+    </div>
+    {{/post}}
