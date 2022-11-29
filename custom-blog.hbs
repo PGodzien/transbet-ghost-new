@@ -7,7 +7,7 @@
         <div class="space-y-2">
           <h2 class="text-2xl font-bold text-gray-900 md:text-4xl">{{title}}</h2>
           <p class="text-lg">
-            Informacje o optymalizacji procesów biznesowych i zagadnienia dotyczące wsparcia działania firmy. Przydatne informacje dotyczące systemów informatycznych i ich zastosowania w przedsiębiorstwie.
+            Bieżące informacje z życia firmy. Dzielimy się tutaj wszystkimi aktualnościami, które mogą być przydatne dla naszych klientów. Pokazujemy również zaplecze naszej pracy i przedstawiamy, jak wygląda nasza działalność od środka.
           </p>
         </div>
     </div>
@@ -20,7 +20,6 @@
 {{#get "posts" filter="tags:[blog]"}}
     {{#foreach posts}}
         {{> "card"}} {{!-- partials/card.hbs --}}
-
    {{/foreach}}
 {{/get}}
 
