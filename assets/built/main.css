@@ -2764,6 +2764,10 @@ select {
     margin-top: 0px !important;
   }
 
+  .md\:ml-5 {
+    margin-left: 1.25rem !important;
+  }
+
   .md\:block {
     display: block !important;
   }
