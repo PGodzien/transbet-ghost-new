@@ -1449,6 +1449,9 @@ select {
 .h-20 {
   height: 5rem !important;
 }
+.h-8 {
+  height: 2rem !important;
+}
 .w-full {
   width: 100% !important;
 }
@@ -1502,6 +1505,12 @@ select {
 }
 .w-56 {
   width: 14rem !important;
+}
+.w-14 {
+  width: 3.5rem !important;
+}
+.w-16 {
+  width: 4rem !important;
 }
 .max-w-7xl {
   max-width: 80rem !important;
