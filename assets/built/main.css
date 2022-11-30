@@ -2110,6 +2110,9 @@ select {
 .pr-6 {
   padding-right: 1.5rem !important;
 }
+.pl-2 {
+  padding-left: 0.5rem !important;
+}
 .text-left {
   text-align: left !important;
 }
@@ -2587,6 +2590,10 @@ select {
 .hover\:text-pink-500:hover {
   --tw-text-opacity: 1 !important;
   color: rgb(236 72 153 / var(--tw-text-opacity)) !important;
+}
+.hover\:text-yellow-300:hover {
+  --tw-text-opacity: 1 !important;
+  color: rgb(253 224 71 / var(--tw-text-opacity)) !important;
 }
 .hover\:opacity-0:hover {
   opacity: 0 !important;
