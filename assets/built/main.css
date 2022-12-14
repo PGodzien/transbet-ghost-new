@@ -1812,10 +1812,6 @@ select {
 .bg-transparent {
   background-color: transparent !important;
 }
-.bg-green-200 {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(187 247 208 / var(--tw-bg-opacity)) !important;
-}
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8 !important;
 }
@@ -3123,6 +3119,11 @@ select {
   .lg\:text-2xl {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
   }
 }
 @media (min-width: 1280px) {
