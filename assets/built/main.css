@@ -2123,11 +2123,11 @@ select {
 .font-semibold {
   font-weight: 600 !important;
 }
-.font-light {
-  font-weight: 300 !important;
-}
 .font-extrabold {
   font-weight: 800 !important;
+}
+.font-light {
+  font-weight: 300 !important;
 }
 .uppercase {
   text-transform: uppercase !important;
@@ -3106,9 +3106,19 @@ select {
     padding-right: 2.5rem !important;
   }
 
+  .lg\:text-5xl {
+    font-size: 3rem !important;
+    line-height: 1 !important;
+  }
+
   .lg\:text-6xl {
     font-size: 3.75rem !important;
     line-height: 1 !important;
+  }
+
+  .lg\:text-4xl {
+    font-size: 2.25rem !important;
+    line-height: 2.5rem !important;
   }
 
   .lg\:text-lg {
@@ -3119,21 +3129,6 @@ select {
   .lg\:text-2xl {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
-  }
-
-  .lg\:text-4xl {
-    font-size: 2.25rem !important;
-    line-height: 2.5rem !important;
-  }
-
-  .lg\:text-5xl {
-    font-size: 3rem !important;
-    line-height: 1 !important;
-  }
-
-  .lg\:text-7xl {
-    font-size: 4.5rem !important;
-    line-height: 1 !important;
   }
 }
 @media (min-width: 1280px) {
