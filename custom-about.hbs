@@ -1,26 +1,22 @@
 {{!< default}} {{#post}} 
-
-<!-- Hero -->
 <section>
     <div class="relative w-full overflow-hidden">
-      <div class="relative flex items-center justify-end py-12 overflow-hidden bg-black 2xl:py-44 md:py-0">
+      <div class="relative flex items-center justify-end overflow-hidden bg-black">
           <div class="absolute inset-0 z-10 opacity-50 bg-gradient-to-b from-black via-black to-transparent"></div>
-          <div class="absolute inset-0 bg-center bg-cover bg-norepeat" style="background-image: url(https://transbet.com.pl/content/images/2022/12/about_team.webp);"></div>
+          {{#if feature_image}}
+          <div class="absolute inset-0 bg-center bg-cover bg-norepeat" style="background-image: url({{feature_image}}"></div>
+          {{/if}}
           <div class="container relative z-20 px-6 m-auto mx-auto max-w-7xl md:px-12 lg:px-7">
               <div class="flex flex-wrap items-center px-2 md:px-0">
-                  <div class="relative text-white md:py-12 lg:w-5/12 lg:py-24 xl:py-40">
+                  <div class="relative text-white md:py-12 ">
                     <div class="relative z-20 px-16 py-12">
                       <!-- <div class="absolute z-10 w-full h-full shadow-2xl -top-5 left-5 md:backdrop-blur-sm md:bg-black md:bg-opacity-20"></div> -->
-                      <h2 class="relative z-20 max-w-2xl text-4xl font-extrabold uppercase shadow-2xl lg:text-6xl">
-                          <span>O firmie</span>
+                      <h2 class="relative z-20 text-2xl font-bold lg:text-5xl">
+                          <span>{{title}}</span>
                       </h2>
-                      <p class="relative z-20 max-w-2xl my-6 text-gray-300 shadow-2xl">
-                        
-Betoniarnia TRANSBET BETONIARNIE GROCHOWICZ Sp. K. swą działalność rozpoczęła w 1993 r. Jesteśmy firmą rodzinną.</p>
-                      <br></p>
                       </div>
                   </div>
-                  <div class="relative h-full min-w-xl w-xl lg:w-7/12">
+                  <div class="relative h-full min-w-xl w-xl ">
                   </div>
               </div>
           </div>
@@ -28,6 +24,9 @@ Betoniarnia TRANSBET BETONIARNIE GROCHOWICZ Sp. K. swą działalność rozpoczę
       </div>
   </div>
   </div>
+</section>
+<!-- Hero -->
+
   <section class="pt-16 bg-white">
     <div class="container px-4 mx-auto">
       <div class="mx-auto md:max-w-3xl">
@@ -35,8 +34,8 @@ Betoniarnia TRANSBET BETONIARNIE GROCHOWICZ Sp. K. swą działalność rozpoczę
       </div>
     </div>
   </section>
-  <!-- TEAM -->
-</section>
+  <img class="container pb-16 mx-auto max-w-7xl" src="/assets/public/about_team.webp" alt="">
+
 <div class="pb-16 pl-4 pr-4 mx-auto ml-auto mr-auto bg-top bg-cover max-w-7xl md:px-24 lg:px-12 lg:pb-20">
   <div class="mb-10 ml-auto mr-auto bg-top bg-cover max-w-7xl md:mx-auto lg:max-w-3xl md:mb-16">
       <div class="mb-6 ml-auto mr-auto tracking-tight text-gray-900 bg-top bg-cover max-w-7xl md:mx-auto">
