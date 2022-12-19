@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="{{asset "built/main.css"}}" />
+  <link rel="stylesheet" type="text/css" href="{{asset " built/main.css"}}" />
   <script defer src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js" async></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,24 +37,29 @@
 </head>
 
 <body class="relative text-gray-700">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJLRLD2" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   {{navigation}}
   <div class="relative">
     <main class="relative">
-        <div id="cookie_cs_v01"
-          class="fixed z-50 w-full p-5 text-sm text-center bg-white shadow-2xl md:bottom-5 bottom-2 md:left-5 md:w-1/4 md:p-8">
-          <p class="text-center">Nasza strona wykorzystuje pliki cookies. Brak zmiany ustawień przeglądarki oznacza
-            zgodę
-            na ich użycie. 
-            <a href="/polityka-prywatnosci/" id="cookie_cs_v01_polityka"
-              class="font-bold underline underline-offset-4">Polityka Prywatności</a> <br><br><a
-              href="javascript:cookie_cs_v01_create_cookie('cookie_cs_v01',1,7);"
-              class="px-3 py-2 mt-6 text-xs text-white transition duration-200 bg-black hover:bg-secondary">rozumiem</a>
-          </p>
-        </div>
+      <div id="cookie_cs_v01"
+        class="fixed z-50 w-full p-5 text-sm text-center bg-white shadow-2xl md:bottom-5 bottom-2 md:left-5 md:w-1/4 md:p-8">
+        <p class="text-center">Nasza strona wykorzystuje pliki cookies. Brak zmiany ustawień przeglądarki oznacza
+          zgodę
+          na ich użycie.
+          <a href="/polityka-prywatnosci/" id="cookie_cs_v01_polityka"
+            class="font-bold underline underline-offset-4">Polityka Prywatności</a> <br><br><a
+            href="javascript:cookie_cs_v01_create_cookie('cookie_cs_v01',1,7);"
+            class="px-3 py-2 mt-6 text-xs text-white transition duration-200 bg-black hover:bg-secondary">rozumiem</a>
+        </p>
+      </div>
       {{{body}}}
     </main>
     <a href="#top" class="">
-      <img id="myBtn" class="fixed z-40 w-12 h-12 hide right-8 bottom-8" src="/assets/public/back-to-top-arrow.svg" alt="">
+      <img id="myBtn" class="fixed z-40 w-12 h-12 hide right-8 bottom-8" src="/assets/public/back-to-top-arrow.svg"
+        alt="">
     </a>
     {{> "footer"}}
   </div>
