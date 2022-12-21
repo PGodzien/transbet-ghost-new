@@ -1307,11 +1307,11 @@ select {
 .mb-7 {
   margin-bottom: 1.75rem !important;
 }
-.mt-3 {
-  margin-top: 0.75rem !important;
-}
 .mt-8 {
   margin-top: 2rem !important;
+}
+.mt-3 {
+  margin-top: 0.75rem !important;
 }
 .mb-24 {
   margin-bottom: 6rem !important;
@@ -1476,14 +1476,14 @@ select {
 .max-w-md {
   max-width: 28rem !important;
 }
-.max-w-2xl {
-  max-width: 42rem !important;
-}
 .max-w-lg {
   max-width: 32rem !important;
 }
 .max-w-5xl {
   max-width: 64rem !important;
+}
+.max-w-2xl {
+  max-width: 42rem !important;
 }
 .max-w-4xl {
   max-width: 56rem !important;
@@ -2099,9 +2099,6 @@ select {
 .leading-6 {
   line-height: 1.5rem !important;
 }
-.leading-normal {
-  line-height: 1.5 !important;
-}
 .tracking-tight {
   letter-spacing: -0.025em !important;
 }
@@ -2128,10 +2125,6 @@ select {
   --tw-text-opacity: 1 !important;
   color: rgb(107 114 128 / var(--tw-text-opacity)) !important;
 }
-.text-gray-300 {
-  --tw-text-opacity: 1 !important;
-  color: rgb(209 213 219 / var(--tw-text-opacity)) !important;
-}
 .text-gray-700 {
   --tw-text-opacity: 1 !important;
   color: rgb(55 65 81 / var(--tw-text-opacity)) !important;
@@ -2139,6 +2132,10 @@ select {
 .text-blue-50 {
   --tw-text-opacity: 1 !important;
   color: rgb(239 246 255 / var(--tw-text-opacity)) !important;
+}
+.text-gray-300 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(209 213 219 / var(--tw-text-opacity)) !important;
 }
 .text-gray-400 {
   --tw-text-opacity: 1 !important;
@@ -2771,11 +2768,6 @@ select {
     padding-bottom: 3rem !important;
   }
 
-  .md\:py-0 {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
-  }
-
   .md\:px-24 {
     padding-left: 6rem !important;
     padding-right: 6rem !important;
@@ -2789,6 +2781,11 @@ select {
   .md\:px-5 {
     padding-left: 1.25rem !important;
     padding-right: 1.25rem !important;
+  }
+
+  .md\:py-0 {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
 
   .md\:pb-4 {
@@ -2884,20 +2881,20 @@ select {
     width: auto !important;
   }
 
-  .lg\:w-5\/12 {
-    width: 41.666667% !important;
-  }
-
-  .lg\:w-7\/12 {
-    width: 58.333333% !important;
-  }
-
   .lg\:w-3\/5 {
     width: 60% !important;
   }
 
   .lg\:w-2\/5 {
     width: 40% !important;
+  }
+
+  .lg\:w-5\/12 {
+    width: 41.666667% !important;
+  }
+
+  .lg\:w-7\/12 {
+    width: 58.333333% !important;
   }
 
   .lg\:w-4\/12 {
@@ -2968,11 +2965,6 @@ select {
     padding-right: 1.75rem !important;
   }
 
-  .lg\:py-24 {
-    padding-top: 6rem !important;
-    padding-bottom: 6rem !important;
-  }
-
   .lg\:px-12 {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
@@ -2986,6 +2978,11 @@ select {
   .lg\:py-20 {
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
   }
 
   .lg\:px-14 {
@@ -3006,11 +3003,6 @@ select {
     line-height: 1 !important;
   }
 
-  .lg\:text-6xl {
-    font-size: 3.75rem !important;
-    line-height: 1 !important;
-  }
-
   .lg\:text-4xl {
     font-size: 2.25rem !important;
     line-height: 2.5rem !important;
@@ -3019,6 +3011,11 @@ select {
   .lg\:text-2xl {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem !important;
+    line-height: 1 !important;
   }
 }
 @media (min-width: 1280px) {
@@ -3036,11 +3033,6 @@ select {
     padding-right: 1.5rem !important;
   }
 
-  .xl\:py-40 {
-    padding-top: 10rem !important;
-    padding-bottom: 10rem !important;
-  }
-
   .xl\:px-12 {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
@@ -3056,6 +3048,11 @@ select {
     padding-bottom: 3rem !important;
   }
 
+  .xl\:py-40 {
+    padding-top: 10rem !important;
+    padding-bottom: 10rem !important;
+  }
+
   .xl\:pt-24 {
     padding-top: 6rem !important;
   }
@@ -3065,11 +3062,6 @@ select {
   }
 }
 @media (min-width: 1536px) {
-
-  .\32xl\:py-44 {
-    padding-top: 11rem !important;
-    padding-bottom: 11rem !important;
-  }
 
   .\32xl\:py-20 {
     padding-top: 5rem !important;
