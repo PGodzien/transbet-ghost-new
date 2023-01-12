@@ -1,3 +1,2 @@
 User-agent: \*
 Sitemap: https://transbet.com.pl/sitemap.xml
-Disallow: /ghost/
