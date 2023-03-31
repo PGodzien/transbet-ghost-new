@@ -1493,6 +1493,9 @@ select {
 .max-w-xs {
   max-width: 20rem !important;
 }
+.max-w-xl {
+  max-width: 36rem !important;
+}
 .flex-1 {
   -webkit-box-flex: 1 !important;
       -ms-flex: 1 1 0% !important;
@@ -1764,6 +1767,10 @@ select {
 .bg-gray-300 {
   --tw-bg-opacity: 1 !important;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity)) !important;
+}
+.bg-red-500 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity)) !important;
 }
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8 !important;
