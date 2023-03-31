@@ -379,8 +379,8 @@
     </div>
   </div>
   <div class="py-16">
-    <div class="container px-6 m-auto text-gray-600 max-w-7xl md:px-12 xl:px-6">
-      <div class="mx-auto flex justify-around">
+    <div class="container mx-auto px-6  text-gray-600 max-w-7xl md:px-12 xl:px-6">
+      <div class="flex flex-wrap space-y-6 xl:space-y-0 justify-around">
         {{#get "posts" filter="tags:[blog]" limit="2"}}
           {{#foreach posts}}
             {{> "card"}} {{!-- partials/card.hbs --}}
