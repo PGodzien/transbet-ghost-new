@@ -1515,6 +1515,9 @@ select {
   max-width: -moz-max-content !important;
   max-width: max-content !important;
 }
+.max-w-3xl {
+  max-width: 48rem !important;
+}
 .flex-1 {
   -webkit-box-flex: 1 !important;
       -ms-flex: 1 1 0% !important;

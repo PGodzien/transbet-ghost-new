@@ -1,14 +1,6 @@
 {{!< default}} {{#post}} <!-- BLOG -->
     <section class="pt-20 overflow-hidden 2xl:pt-40">
-        <div class="container grid-gap-8 grid grid-cols-2 px-4 mx-auto place-items-center place-content-center">
-            <div class="">
-            <img
-                src="{{feature_image}}"
-                alt={{title}}
-                loading="lazy"
-                class="relative z-20 object-cover object-center w-full h-96"
-            />
-            </div>
+        <div class="container px-4 mx-auto place-items-center place-content-center">
             <div class="text-center">
                 <span
                     class="text-xl font-bold text-transparent lg:text-2xl bg-clip-text bg-gradient-to-br from-yellow-200 to-orange-600">{{tags
@@ -21,10 +13,18 @@
                     {{custom_excerpt}}</p>
                 {{/if}}
             </div>
+            <div class="max-w-4xl mx-auto mt-8">
+            <img
+                src="{{feature_image}}"
+                alt={{title}}
+                loading="lazy"
+                class="relative z-20 object-cover object-center w-full h-96"
+            />
+            </div>
         </div>
     </section>
     {{!-- CONTENT --}}
-    <section class="max-w-5xl py-12 text-xl text-gray-700 prose leading-relaxed container px-8 mx-auto">
+    <section class="max-w-4xl py-12 text-xl text-gray-700 prose leading-relaxed container px-8 mx-auto">
         <div class="">
             {{content}}
         </div>
