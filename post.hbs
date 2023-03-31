@@ -1,10 +1,15 @@
 {{!< default}} {{#post}} <!-- BLOG -->
     <section class="pt-20 overflow-hidden 2xl:pt-40">
-        <div class="container px-4 mx-auto">
-            <div class="relative w-full mb-24 overflow-hidden bg-fixed bg-center object-center bg-no-repeat bg-cover py-56"
-                style="height: 648px; background-image: url({{feature_image}});">
+        <div class="container grid-gap-8 grid grid-cols-2 px-4 mx-auto place-items-center place-content-center">
+            <div class="bg-red-500">
+            <img
+                src="{{feature_image}}"
+                alt={{title}}
+                loading="lazy"
+                class="relative z-20 object-cover object-top w-full h-96"
+            />
             </div>
-            <div class="max-w-5xl mx-auto text-center">
+            <div class="text-center">
                 <span
                     class="text-xl font-bold text-transparent lg:text-2xl bg-clip-text bg-gradient-to-br from-yellow-200 to-orange-600">{{tags
                     from="1" to="1"}}</span>
@@ -12,12 +17,9 @@
                 <div class="mx-auto my-4 text-center">{{date format="DD-MM-YYYY"}} / {{reading_time minute="1 min.
                     czytania" minutes="% minuty czytania" }}</div>
                 {{#if custom_excerpt}}
-                <p class="max-w-2xl pb-12 mx-auto mb-12 overflow-auto text-xl border-b border-gray-200">
+                <p class="max-w-2xl mx-auto overflow-auto text-xl">
                     {{custom_excerpt}}</p>
                 {{/if}}
-                <div class="max-w-4xl mx-auto font-light prose text-left text-gray-900 md:leading-normal md:text-xl">
-                    <p class="">{{content}}</p>
-                </div>
             </div>
         </div>
     </section>
