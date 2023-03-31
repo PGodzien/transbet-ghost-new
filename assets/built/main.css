@@ -1407,14 +1407,14 @@ select {
 .h-4 {
   height: 1rem !important;
 }
-.h-5 {
-  height: 1.25rem !important;
-}
 .h-24 {
   height: 6rem !important;
 }
 .h-14 {
   height: 3.5rem !important;
+}
+.h-5 {
+  height: 1.25rem !important;
 }
 .h-8 {
   height: 2rem !important;
@@ -1448,9 +1448,6 @@ select {
 }
 .w-6 {
   width: 1.5rem !important;
-}
-.w-5 {
-  width: 1.25rem !important;
 }
 .w-28 {
   width: 7rem !important;
