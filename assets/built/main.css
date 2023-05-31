@@ -1868,6 +1868,11 @@ select {
   --tw-gradient-to: rgb(254 240 138 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
+.from-white {
+  --tw-gradient-from: #fff !important;
+  --tw-gradient-to: rgb(255 255 255 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
+}
 .via-primary {
   --tw-gradient-to: rgb(53 74 121 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), #354a79, var(--tw-gradient-to) !important;
@@ -1875,6 +1880,10 @@ select {
 .via-black {
   --tw-gradient-to: rgb(0 0 0 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), #000, var(--tw-gradient-to) !important;
+}
+.via-transparent {
+  --tw-gradient-to: rgb(0 0 0 / 0) !important;
+  --tw-gradient-stops: var(--tw-gradient-from), transparent, var(--tw-gradient-to) !important;
 }
 .to-transparent {
   --tw-gradient-to: transparent !important;
