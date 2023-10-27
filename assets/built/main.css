@@ -1219,6 +1219,9 @@ select {
 .left-24 {
   left: 6rem !important;
 }
+.top-2\/3 {
+  top: 66.666667% !important;
+}
 .isolate {
   isolation: isolate !important;
 }
@@ -1532,6 +1535,12 @@ select {
 .h-80 {
   height: 20rem !important;
 }
+.h-28 {
+  height: 7rem !important;
+}
+.h-\[0\.58em\] {
+  height: 0.58em !important;
+}
 .min-h-full {
   min-height: 100% !important;
 }
@@ -1716,6 +1725,16 @@ select {
 }
 .rotate-45 {
   --tw-rotate: 45deg !important;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+.rotate-6 {
+  --tw-rotate: 6deg !important;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+}
+.-rotate-6 {
+  --tw-rotate: -6deg !important;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
 }
@@ -2154,6 +2173,12 @@ select {
 .fill-current {
   fill: currentColor !important;
 }
+.fill-blue-300\/70 {
+  fill: rgb(147 197 253 / 0.7) !important;
+}
+.fill-orange-300\/70 {
+  fill: rgb(253 186 116 / 0.7) !important;
+}
 .object-cover {
   -o-object-fit: cover !important;
      object-fit: cover !important;
@@ -2553,6 +2578,18 @@ select {
 .text-orange-400 {
   --tw-text-opacity: 1 !important;
   color: rgb(251 146 60 / var(--tw-text-opacity)) !important;
+}
+.text-blue-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(37 99 235 / var(--tw-text-opacity)) !important;
+}
+.text-orange-600 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(234 88 12 / var(--tw-text-opacity)) !important;
+}
+.text-orange-500 {
+  --tw-text-opacity: 1 !important;
+  color: rgb(249 115 22 / var(--tw-text-opacity)) !important;
 }
 .underline {
   text-decoration-line: underline !important;
