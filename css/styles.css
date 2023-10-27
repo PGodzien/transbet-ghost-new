@@ -2,6 +2,11 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
 .kg-width-wide img {
   margin-right: auto;
   max-width: 100%;
@@ -15,22 +20,22 @@
   z-index: inherit;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .kg-image {
-  margin:auto;
-  max-width: 18vw;
+    margin: auto;
+    max-width: 18vw;
 
 
+  }
 }
-}
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .kg-image {
-  margin:auto;
-  max-width: 80vw;
+    margin: auto;
+    max-width: 80vw;
 
 
-}
+  }
 }
 
 .kg-image-card {
