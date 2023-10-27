@@ -33,8 +33,8 @@ module.exports = {
                 animateRight: "animateRight 90s linear infinite",
             },
             fontFamily: {
-                sans: ["sofia-pro", ...defaultTheme.fontFamily.sans],
-                serif: ["sofia-pro", ...defaultTheme.fontFamily.serif],
+                sans: ["Hubot-Sans", ...defaultTheme.fontFamily.sans],
+                serif: ["Hubot-Sans", ...defaultTheme.fontFamily.serif],
             },
             colors: {
                 primary: "#354a79",
@@ -59,6 +59,6 @@ module.exports = {
         require("@tailwindcss/typography"),
         require("@tailwindcss/forms"),
         require("@tailwindcss/aspect-ratio"),
-        require('@tailwindcss/line-clamp'),
+        require("@tailwindcss/line-clamp"),
     ],
 };
