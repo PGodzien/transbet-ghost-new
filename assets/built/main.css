@@ -1139,6 +1139,9 @@ select {
 .relative {
   position: relative !important;
 }
+.sticky {
+  position: sticky !important;
+}
 .inset-0 {
   top: 0px !important;
   right: 0px !important;
