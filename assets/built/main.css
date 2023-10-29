@@ -1857,7 +1857,7 @@ select {
   --tw-gradient-to: rgb(0 0 0 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
 }
-.from-orange-500 {
+.from-secondary {
   --tw-gradient-from: #f97316 !important;
   --tw-gradient-to: rgb(249 115 22 / 0) !important;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) !important;
@@ -2221,7 +2221,7 @@ select {
   --tw-text-opacity: 1 !important;
   color: rgb(209 213 219 / var(--tw-text-opacity)) !important;
 }
-.text-orange-500 {
+.text-secondary {
   --tw-text-opacity: 1 !important;
   color: rgb(249 115 22 / var(--tw-text-opacity)) !important;
 }
