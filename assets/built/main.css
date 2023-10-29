@@ -1881,7 +1881,7 @@ select {
 .to-yellow-600 {
   --tw-gradient-to: #ca8a04 !important;
 }
-.to-orange-600 {
+.to-secondary {
   --tw-gradient-to: #ea580c !important;
 }
 .bg-cover {
