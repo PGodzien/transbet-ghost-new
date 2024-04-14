@@ -11,12 +11,12 @@ module.exports = {
     theme: {
         extend: {
             keyframes: {
-
                 ping: {
                     "75%, 100%": {
                       transform: "scale(2)",
                       opacity: "0",
                     },
+                },
 
                 animateRight: {
                     "100%": {
