@@ -17,7 +17,8 @@
                     d="M38 24.553L28 29.0985L18 24.553V35C18 35.5523 18.4477 36 19 36H37C37.5523 36 38 35.5523 38 35V24.553Z"
                     fill="currentColor"></path>
             </svg>
-            <p class="pr-3 border-r border-gray-200"><a href="mailto:biuro@transbet.com.pl" class="">biuro@transbet.com.pl</a></p>
+            <p class="pr-3 border-r border-gray-200"><a href="mailto:biuro@transbet.com.pl"
+                    class="">biuro@transbet.com.pl</a></p>
         </div>
         <a><img class="h-auto pt-5 w-80" src="/assets/public/FE_POIR_poziom_pl_dark.svg" alt=""></a>
     </div>
@@ -34,19 +35,27 @@
             </a>
             <nav class="top-0 left-0 flex-col items-center justify-center hidden h-full space-y-3 bg-white md:justify-end md:bg-transparent md:space-x-10 md:space-y-0 md:relative md:flex md:flex-row"
                 :class="{'flex fixed top-0 left-0 w-full z-40': showMenu, 'hidden': !showMenu }">
+                <a href="https://transbettsc.com" target="_blank"
+                    class="relative inline-block text-xl transition duration-150 md:text-lg text-secondary ease hover:text-black md:hover:text-white z-50">
+                    Transbet TSC</a>
                 <div id="dropdown-wrapper" class="relative inline-block">
                     <button onclick="toggleMenu()"
                         class="relative inline-block text-xl text-gray-900 transition duration-150 md:text-lg md:text-gray-200 ease hover:text-secondary">
                         O firmie</button>
 
-                        <div id="dropdown" class="hidden flex absolute inset-0 z-50 w-max top-10 flex-col bg-white drop-shadow-md">
-                            <a class="px-5 py-3 hover:bg-gray-100 border-b border-gray-200 bg-white" href="/o-firmie/">O nas</a>
-                            <a class="px-5 py-3 hover:bg-gray-100 border-b border-gray-200 bg-white" href="/beton-i-jego-sklad/">Skład betonu</a>
-                            <a class="px-5 py-3 hover:bg-gray-100 border-b border-gray-200 bg-white" href="/pielegnacja-betonu/">Pielęgnacja
-                                betonu</a>
-                                <a class="px-5 py-3 hover:bg-gray-100 border-b border-gray-200 bg-white" href="/innowacje/">Innowacje</a>
-                            <a class="px-5 py-3 hover:bg-gray-100 bg-white" href="/kariera/">Kariera</a>
-                        </div>
+                    <div id="dropdown"
+                        class="hidden flex absolute inset-0 z-50 w-max top-10 flex-col bg-white drop-shadow-md">
+                        <a class="px-5 py-3 hover:bg-gray-100 border-b border-gray-200 bg-white" href="/o-firmie/">O
+                            nas</a>
+                        <a class="px-5 py-3 hover:bg-gray-100 border-b border-gray-200 bg-white"
+                            href="/beton-i-jego-sklad/">Skład betonu</a>
+                        <a class="px-5 py-3 hover:bg-gray-100 border-b border-gray-200 bg-white"
+                            href="/pielegnacja-betonu/">Pielęgnacja
+                            betonu</a>
+                        <a class="px-5 py-3 hover:bg-gray-100 border-b border-gray-200 bg-white"
+                            href="/innowacje/">Innowacje</a>
+                        <a class="px-5 py-3 hover:bg-gray-100 bg-white" href="/kariera/">Kariera</a>
+                    </div>
 
                 </div>
                 {{#foreach navigation}}
