@@ -11,6 +11,13 @@ module.exports = {
     theme: {
         extend: {
             keyframes: {
+
+                ping: {
+                    "75%, 100%": {
+                      transform: "scale(2)",
+                      opacity: "0",
+                    },
+
                 animateRight: {
                     "100%": {
                         transform: "translateX(calc(-420px * 11))",
@@ -31,6 +38,7 @@ module.exports = {
                 rotation: "rotation 40s ease-in-out infinite",
                 rotation2: "rotation 30s ease-in-out infinite",
                 animateRight: "animateRight 90s linear infinite",
+                ping: "1s cubic-bezier(0, 0, 0.2, 1) infinite",
             },
             fontFamily: {
                 sans: ["Hubot-Sans", ...defaultTheme.fontFamily.sans],
